@@ -1,0 +1,5 @@
+.btn-social {
+    color: var(--bs-primary) !important;
+    width: var(--pix-w-24);
+    height: var(--pix-h-24)
+}

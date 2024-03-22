@@ -1,0 +1,120 @@
+/*main */
+/* hover */
+/* checkmark */
+/* avatar-name */
+/* maintask-right accordion */
+/*====================*/
+ /*main */
+body {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+.wstage-color > button {
+    width: var(--pix-w-27);
+    height: var(--pix-h-27);
+}
+.wstage-color > button.on-selected {
+    width: var(--pix-w-33);
+    height: var(--pix-h-33);
+}
+.wstage-icon > button.on-selected {
+    width: var(--pix-w-45);
+    height: var(--pix-h-40);
+}
+/* hover */
+.hover-effect-border:hover:not(:focus) {
+    background-color: rgba(0, 0, 0, 0.05) !important;
+    border-color: transparent;
+    cursor: pointer;
+}
+.hover-none:hover:not(:focus) {
+    background-color: transparent !important;
+}
+.hover-effect:hover:not(:focus) {
+    background-color: rgba(0, 0, 0, 0.05) !important;
+    cursor: pointer;
+}
+.hover-opacity-5per:hover:not(:focus) {
+    opacity: 0.5;
+    cursor: pointer;
+}
+.hover-opacity-unset:hover:not(:focus) {
+    opacity: 1 !important;
+}
+.hover-opacity-7per:hover:not(:focus) {
+    opacity: 0.5;
+    cursor: pointer;
+}
+/*checkmark*/
+.item-do-list .form-control:focus {
+    border-color: #86b7fe !important;
+    box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25) !important;
+}
+.item-do-list.hover-effect:hover:not(:focus) .hover-child:not(:focus){
+    background: #F2F2F2 !important;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.checkcontainer {
+    display: block;
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 24px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.checkcontainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkcontainer input:checked~.checkmark {
+    background-color: var(--bs-cyan);
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px !important;
+    width: 24px !important;
+    border-radius: 50%;
+    border: 2px solid var(--bs-cyan);
+    padding: unset;
+}
+.checkcontainer input:checked~.checkmark:after {
+    display: block;
+}
+.checkcontainer .checkmark:after {
+    left: 7px;
+    top: 2px;
+    width: 6px;
+    height: 13px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/* avatar-name */
+.avatar-name {
+    position: relative;
+}
+.avatar-name img {
+    width: 27px;
+    height: 27px;
+    object-fit: cover;
+}
+.avatar-name p {
+    width: 27px;
+    height: 27px;
+    color: var(--bs-purple);
+}
+/* maintask-right accordion */
+.maintask-right > .accordion > .accordion-item > .accordion-collapse .accordion-body{
+    padding: 0;
+}

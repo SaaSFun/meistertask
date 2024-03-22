@@ -1,0 +1,49 @@
+.stage-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 14px;
+    padding-right: 22px;
+    box-shadow: rgb(0 0 0 / 5%) 0px 2px 5px 0px, rgb(0 0 0 / 5%) 0px 0px 0px 1px;
+    height:  54px;
+}
+.stage-header:hover > div.setting-stage button{
+    display: block !important;
+}
+.stage-header:hover > input:focus + div.setting-stage button{
+    display: none !important;
+}
+.stage-header > input:focus{
+    color: rgba(var(--bs-secondary-rgb),var(--bs-text-opacity))!important;
+    background: var(--bs-body-bg) !important;
+}
+.stage-header-icon {
+    width: 36px;
+    height: 36px;
+    margin-right: 6px;
+    padding: 6px;
+}
+.stage-header-icon svg {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-45px);
+}
+.modal-maintask.modal-header{
+    border-radius: 0!important;
+}
+.modal-maintask.modal-header div.modal-title{
+    display: flex!important;
+    grid-gap: .5rem!important;
+    gap: .5rem!important;
+    width: 96.6%!important;
+}
+.action-task-detail > .react-datepicker-wrapper{
+    display: flex!important;
+}
+.action-task-detail > .react-datepicker-wrapper .react-datepicker__input-container{
+    padding-right: .5rem!important;
+    padding-left: .5rem!important;
+}

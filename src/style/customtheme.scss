@@ -1,0 +1,45 @@
+/*datepicker*/
+/*nav link*/
+.nav-tabs .nav-link {
+    cursor: pointer;
+}
+/*=================*/
+/*datepicker*/
+.input-datepicker {
+    font-size: var(--fs-9);
+    height: var(--pix-h-29);
+}
+.input-datepicker:hover:not(:focus) {
+    cursor: pointer;
+}
+.react-datepicker__close-icon::after {
+    background-color: var(--bs-blue);
+}
+/*react-select*/
+.cuson-selects-value {
+    height: 100% !important;
+    display: grid;
+}
+.cuson-selects-value > div > div {
+    padding: 0 !important;
+}
+.cuson-tags-value > div + div{
+    margin-top: 0 !important;
+}
+.cuson-tags-value > div > div{
+    grid-gap: .25rem!important;
+    gap: .25rem!important;
+    padding-right: .25rem!important;
+    padding-left: .25rem!important;
+}
+.cuson-tags-value > div > div > div > div{
+    padding-top: .125rem!important;
+    padding-bottom: .125rem!important;
+}
+/*nav link*/
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    --mdb-nav-pills-link-active-bg: #e3ebf7;
+    --mdb-nav-pills-link-active-color: #285192;
+    background-color: var(--mdb-nav-pills-link-active-bg) !important;
+    color: var(--mdb-nav-pills-link-active-color) !important;
+}

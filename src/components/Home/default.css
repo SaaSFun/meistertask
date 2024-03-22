@@ -1,0 +1,20 @@
+.home-container {
+    width: calc(100% - 80px);
+}
+.home-container.right-filter-showing {
+    width: calc(100% - 80px - var(--pix-w-308));
+}
+.kanban-container {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background: linear-gradient( -45deg, rgb(245, 247, 248), rgb(237, 241, 242) 100%);
+    width: 100%;
+    height: calc(100vh - 56px);
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.kanban-board-wms {
+    background: linear-gradient( -45deg, rgb(245, 247, 248), rgb(237, 241, 242) 100%);
+}

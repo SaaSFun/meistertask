@@ -1,0 +1,11 @@
+.stage-popover > div.popover {
+    --bs-popover-max-width: 380px;
+}
+.winfo-tags > button {
+    width: var(--pix-w-24);
+    height: var(--pix-h-24);
+}
+.winfo-tags > button.on-selected {
+    width: var(--pix-w-30);
+    height: var(--pix-h-30);
+}
